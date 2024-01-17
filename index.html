@@ -15,16 +15,28 @@
     <!-- HTML -->
   
 <main>
-   <h1>Convert to New Lines</h1>
+   <h1>Separate texts using a separator</h1>
    <form>
      <textarea placeholder="Enter some Strings" name="stringEl" id="stringEl" cols="30" rows="10"></textarea>
-     <button id="submitBtn">Convert </button>
+     <div class="inputGroup">
+        <label for="separator">Enter your separator : </label>
+        <input type="text" id="separator"> 
+     </div>
+     <button id="submitBtn">Separate </button>
    </form>
    
    <div>
      <ul id="ul"> </ul>
    </div>
 </main> 
+<div id="modal" class="modal">
+  <h4>Confirmatory Messages</h4>
+  <p id="confirmatoryMessage"></p>
+  <div class="btnGroup">
+    <button name="accept" id="btn">Yes</button>
+    <button name="reject" id="btn"> Cancel</button></button>
+  </div>
+</div>
   <!-- Project -->
   <script src="main.js"></script>
 </body>
